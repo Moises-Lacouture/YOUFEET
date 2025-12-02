@@ -71,8 +71,10 @@ struct ContentView: View {
                 .padding()
             }
         }
-        .fullScreenCover(isPresented: $showScan,){
+        .sheet(isPresented: $showScan,){
             ScanView()
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
         }
     }
 }
