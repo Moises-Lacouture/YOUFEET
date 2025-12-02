@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showScan = false
     var body: some View {
+        
         ZStack {
             LinearGradient(colors: [Color(red: 0.3, green: 0.2, blue: 0.6), Color(red: 0.2, green: 0.1, blue: 0.4)], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
@@ -22,15 +25,54 @@ struct ContentView: View {
                         .foregroundStyle(.white)
                     Text("By Moises Lacouture")
                         .font(.subheadline)
-                    Text("Final Project")
+                        .foregroundStyle(.white)
+                    Text("3D Foot Measurement")
                         .font(.subheadline)
+                        .foregroundStyle(.white)
                 }
                 Spacer()
-                VStack(){
+                VStack(spacing: 15){
+                    Button(action: {
+                        print("Scan Tapped")
+                        showScan = true
+                    }, label: {
+                        Label("Scan", systemImage: "camera.fill")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color(red: 0.4, green: 0.3, blue: 0.7))
+                            .cornerRadius(40)
+                    })
+                    Button(action: {
+                        print("Previous Scans Tapped")
+                    }, label: {
+                        Label("Previous Scans", systemImage: "shoeprints.fill")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color(red: 0.4, green: 0.3, blue: 0.7))
+                            .cornerRadius(40)
+                    })
+                    Button(action: {
+                        print("Settings Tapped")
+                    }, label: {
+                        Label("Settings", systemImage: "gear")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color(red: 0.4, green: 0.3, blue: 0.7))
+                            .cornerRadius(40)
+                    })
                     
                 }
                 .padding()
             }
+        }
+        .fullScreenCover(isPresented: $showScan,){
+            ScanView()
         }
     }
 }
