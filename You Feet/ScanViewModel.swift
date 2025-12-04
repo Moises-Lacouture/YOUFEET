@@ -1,6 +1,7 @@
 
 import SwiftUI
 import ARKit
+import Foundation
 
 class ScanViewModel: ObservableObject {
     @Published var meshCount = 0;
