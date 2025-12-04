@@ -1,9 +1,4 @@
-//
-//  ScanView.swift
-//  You Feet
-//
-//  Created by Moises Lacouture on 2/12/25.
-//
+
 
 import SwiftUI
 

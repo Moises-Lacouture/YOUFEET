@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  You Feet
-//
-//  Created by Moises Lacouture on 30/11/25.
-//
+
 
 import SwiftUI
 
