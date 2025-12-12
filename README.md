@@ -32,18 +32,9 @@ Requirements:
 - 
 The app requires the following permissions:
 - **Camera** - Required for AR scanning functionality
-
-## 🎬 Demo Video
-
-[**Watch the Demo Video**](YOUR_DEMO_LINK_HERE)
-
-## Screenshots
-
-| Home Screen | Foot Selection | Scanning |
-![Main Page](Photos/Main_page.PNG)
-| Results | Settings | Login |
-
-| ![Results](Screenshots/results.png) | ![Settings](Screenshots/settings.png) | ![Login](Screenshots/login.png) |
+  
+Screenshots and Demo Video:
+Inside the Media Folder
 
 Project Structure:
 
