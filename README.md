@@ -1,7 +1,5 @@
 YouFeet - 3D Foot Measurement App
 
-*Logo
-
 YouFeet is an iOS application that uses LiDAR(photogrammetry in the future too) technology to scan and measure feet in 3D, providing accurate shoe size recommendations based on official Adidas sizing data.
 
 App Overview
@@ -34,7 +32,7 @@ The app requires the following permissions:
 - **Camera** - Required for AR scanning functionality
   
 Screenshots and Demo Video:
-Inside the Media Folder
+Inside the Media Folder of the code
 
 Project Structure:
 
