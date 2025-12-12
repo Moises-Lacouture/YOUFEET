@@ -40,7 +40,7 @@ The app requires the following permissions:
 ## Screenshots
 
 | Home Screen | Foot Selection | Scanning |
-
+![Main Page](Photos/Main_page.PNG)
 | Results | Settings | Login |
 
 | ![Results](Screenshots/results.png) | ![Settings](Screenshots/settings.png) | ![Login](Screenshots/login.png) |
